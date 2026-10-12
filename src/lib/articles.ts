@@ -5,7 +5,7 @@ import MarkdownIt from 'markdown-it'
 import type { Article } from '@/types'
 
 const articlesDirectory = path.join(process.cwd(), 'src/content/articles')
-const md = new MarkdownIt({ linkify: true })
+const md = new MarkdownIt({ linkify: true, breaks: true })
 
 type ArticleFrontmatter = {
   title: string
