@@ -1,12 +1,12 @@
 import { X_HANDLE, X_URL } from '@/lib/site'
 
-export default function XFollow() {
+export default function XFollow({ align = 'center' }: { align?: 'center' | 'start' }) {
   return (
     <a
       href={X_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center gap-2 self-center rounded-full border border-[var(--color-ice-blue)] bg-[var(--color-ice-blue)]/40 px-3 py-1.5 hover:bg-[var(--color-ice-blue)] transition-colors"
+      className={`flex items-center gap-2 ${align === 'start' ? 'self-start' : 'self-center'} rounded-full border border-[var(--color-ice-blue)] bg-[var(--color-ice-blue)]/40 px-3 py-1.5 hover:bg-[var(--color-ice-blue)] transition-colors`}
     >
       <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gray-900 text-white">
         <svg viewBox="0 0 24 24" aria-hidden="true" className="h-2.5 w-2.5 fill-current">

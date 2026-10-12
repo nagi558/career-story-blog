@@ -48,7 +48,7 @@ export default async function ArticleDetailPage({ params }: Props) {
           dangerouslySetInnerHTML={{ __html: article.contentHtml }}
         />
 
-        <XFollow />
+        <XFollow align="start" />
 
         <div className="flex flex-col gap-1">
           <Link
