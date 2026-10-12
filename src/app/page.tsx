@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import XFollow from '@/components/XFollow'
 
 export default function Home() {
   return (
@@ -22,6 +23,8 @@ export default function Home() {
         >
           記事一覧を見る
         </Link>
+
+        <XFollow />
       </div>
     </main>
   )
