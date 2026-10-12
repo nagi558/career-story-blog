@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Geist } from 'next/font/google'
-import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from '@/lib/site'
+import { SITE_NAME, SITE_DESCRIPTION, SITE_URL, X_HANDLE } from '@/lib/site'
 import './globals.css'
 
 const geistSans = Geist({
@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     template: `%s｜${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
+  twitter: {
+    card: 'summary',
+    creator: `@${X_HANDLE}`,
+  },
 }
 
 export default function RootLayout({
